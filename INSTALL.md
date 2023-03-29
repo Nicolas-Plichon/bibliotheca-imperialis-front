@@ -25,7 +25,7 @@ cd React-modele
 yarn 
 
 # lance le serveur de developpement
-yarn start 
+yarn dev 
 
 # rdv sur http://localhost:5173/
 ```
@@ -61,7 +61,7 @@ cp -rn ../React-modele/{src,public} .
 yarn
 
 # lancement du serveur de dev
-yarn start
+yarn dev
 ```
 
 ---
