@@ -1,4 +1,3 @@
-// app/games/components/GamesTable.tsx
 "use client";
 
 import React, { useMemo, useState } from "react";
@@ -11,7 +10,6 @@ interface GamesTableProps {
 export default function GamesTable({ games }: GamesTableProps) {
   const [filterUser, setFilterUser] = useState<string>("");
 
-  // Liste unique d'utilisateurs (triée)
   const users = useMemo(() => {
     const set = new Set<string>();
     games.forEach((g) => {
@@ -37,15 +35,13 @@ export default function GamesTable({ games }: GamesTableProps) {
         >
           <option value="">Tous les joueurs</option>
           {users.map((u) => (
-            <option key={u} value={u}>
-              {u}
-            </option>
+            <option key={u} value={u}>{u}</option>
           ))}
         </select>
       </div>
 
       <div className="overflow-auto">
-        <table className="min-w-full table-auto border-collapse">
+        <table className="min-w-full border-collapse table-auto">
           <thead>
             <tr>
               <th className="px-2 py-1 text-left">Joueur</th>

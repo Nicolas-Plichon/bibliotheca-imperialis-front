@@ -1,11 +1,11 @@
 // lib/types.ts
 export interface Game {
   id: string;
-  user: string;       // ou 'player' selon ton backend — adapte si nécessaire
+  user: string;
   faction?: string;
   result?: string;
   score?: number;
   date?: string;
-  // ajoute d'autres champs réels que renvoie ton backend
-  [key: string]: any; // utile temporairement pour éviter TS errors pendant dev
+  // tu peux ajouter d'autres champs selon ce que ton backend renvoie
+  [key: string]: any;
 }
